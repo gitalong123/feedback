@@ -191,8 +191,6 @@ export default {
       isCancelBtnClsFlag: false,
       active: false,
       ifSwipeLis: false,
-      // ifReleaseBtn: true,
-      // isReleaseBg: false,
       itemsIndex: null,
       itemsImgAll: [],
       itemImgArr: [],
@@ -369,15 +367,6 @@ export default {
     getAmapByLngAndLat(lng, lat) {
       this.locationLng = lng;
       this.locationLat = lat;
-     /* this.getIndexSelect(
-        "",
-        this.provinceId,
-        this.cityId,
-        this.areaId,
-        this.locationLng,
-        this.locationLat,
-        1
-      );*/
     },
 
     isVideoPlay(item, index) {
@@ -624,17 +613,6 @@ export default {
           console.log(res.data.msg);
         });
     },
-
-    /*右下展开*/
-    // releaseFun() {
-    //   this.ifReleaseBtn = false;
-    //   this.isReleaseBg = true;
-    // },
-    /*右下关闭*/
-    // cancelBtn() {
-    //   this.ifReleaseBtn = true;
-    //   this.isReleaseBg = false;
-    // },
     /*-----------------------------------------*/
     /*图片轮播*/
     imgSwipeBtn(item, i) {
